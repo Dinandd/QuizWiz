@@ -1,6 +1,23 @@
+@font-face {
+  font-family: font1;
+  src: url(../fonts/lemon_milk/LEMONMILK-Medium.otf);
+}
+
+@font-face {
+  font-family: 'font2';
+  src: url(../fonts/peach_cake/PeachCake.otf);
+}
+
+
+
+
 /* Navbar container */
 .quizwiz{
     position: absolute;
+    color: #fff;
+    font-family: font2;
+    
+    margin-left: 10vh;
 }
 
 .navbar {
@@ -15,8 +32,8 @@
   /* Links inside the navbar */
   .buttons{
     margin-top: 2.3vh;
-    margin-left: 40vh;
-    position: relative;
+    margin-left: 70vh;
+    position: absolute;
   }
   .navbar a {
     float: left;
@@ -31,6 +48,7 @@
     float: left;
     overflow: hidden;
     margin-top: 2.3vh;
+    margin-left: 60vh;
   }
   /* Dropdown button */
   .dropdown .dropbtn {
