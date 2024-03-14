@@ -9,32 +9,40 @@
 }
 
 
-
-
+.logo{
+  height: 7vh;
+}
+.pages{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vh;
+  margin-left: 75vw;
+  margin-top: 20px;
+}
+.buttons{
+  font-family: font1;
+}
 /* Navbar container */
 .quizwiz{
     position: absolute;
     color: #fff;
     font-family: font2;
-    
-    margin-left: 10vh;
+    font-size: 60pt;
+    margin-top: 0vh;
+    margin-left: 92vh;
 }
 
 .navbar {
     overflow: hidden;
     background-color: #207032;
-    font-family: Arial;
     height: 10vh;
     width: 213.95vh;
     margin-left: -1vh;
     margin-top: -1vh;
   }
   /* Links inside the navbar */
-  .buttons{
-    margin-top: 2.3vh;
-    margin-left: 70vh;
-    position: absolute;
-  }
+
   .navbar a {
     float: left;
     font-size: 18pt;
@@ -47,8 +55,8 @@
   .dropdown {
     float: left;
     overflow: hidden;
-    margin-top: 2.3vh;
-    margin-left: 60vh;
+    font-family: font1;
+
   }
   /* Dropdown button */
   .dropdown .dropbtn {
@@ -63,7 +71,7 @@
   }
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(90, 204, 49);
+    background-color: rgb(52, 168, 10);
   }
   /* Dropdown content (hidden by default) */
   .dropdown-content {
@@ -96,6 +104,3 @@
     font-size: 16pt;
   } */
 
-.logo{
-    height: 6vh;
-}
