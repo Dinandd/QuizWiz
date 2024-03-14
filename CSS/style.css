@@ -35,9 +35,9 @@
 
 .navbar {
     overflow: hidden;
-    background-color: #207032;
+    background-color: rgb(155 7 7);
     height: 10vh;
-    width: 213.95vh;
+    width: 213vh;
     margin-left: -1vh;
     margin-top: -1vh;
   }
@@ -71,13 +71,13 @@
   }
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(52, 168, 10);
+    background-color: rgb(122, 0, 0);
   }
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #964B00;
+    background-color: #630000;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -85,7 +85,7 @@
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -93,7 +93,7 @@
   }
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #530000;
   }
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
