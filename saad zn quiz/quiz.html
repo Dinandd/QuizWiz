@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Kangaroo Quiz</h1>
+        <form id="quiz-form">
+            <div class="question" id="q1">
+                <p>1. Hoeveel soorten kangoeroes zijn er in Australië?</p>
+                <div class="answer" onclick="checkAnswer('q1', '8', this)">4</div>
+                <div class="answer" onclick="checkAnswer('q1', '8', this)">6</div>
+                <div class="answer" onclick="checkAnswer('q1', '8', this)">8</div>
+                <p class="feedback"></p>
+            </div>
+            <div class="question" id="q2" style="display:none">
+                <p>2. Wat is de gemiddelde levensduur van een kangoeroe in het wild?</p>
+                <div class="answer" onclick="checkAnswer('q2', '6', this)">2</div>
+                <div class="answer" onclick="checkAnswer('q2', '6', this)">6</div>
+                <div class="answer" onclick="checkAnswer('q2', '6', this)">10</div>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="question" id="q3" style="display:none">
+                <p>3. Wat is de maximale snelheid die een kangoeroe kan bereiken?</p>
+                <div class="answer" onclick="checkAnswer('q3', '70 km/h', this)">50 km/h</div>
+                <div class="answer" onclick="checkAnswer('q3', '70 km/h', this)">70 km/h</div>
+                <div class="answer" onclick="checkAnswer('q3', '70 km/h', this)">90 km/h</div>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="question" id="q4" style="display:none">
+                <p>4. Hoe noemen we de baby van een kangoeroe?</p>
+                <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">Welp</div>
+                <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">Kalf</div>
+                <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">Joey</div>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="question" id="q4" style="display:none">
+                <p>5. Waar bevindt zich het grootste deel van de kangoeroepopulatie in Australië?</p>
+                <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">De graslanden</div>
+                <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">De woestijnen</div>
+                <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">De bossen</div>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="question" id="q4" style="display:none">
+                <p>6. Wat is de grootste soort kangoeroe?</p>
+                <div class="answer" onclick="checkAnswer('q4', 'Rode kangoeroe', this)">Rode kangoeroe</div>
+                <div class="answer" onclick="checkAnswer('q4', 'Rode kangoeroe', this)">Grijze kangoeroe</div>
+                <div class="answer" onclick="checkAnswer('q4', 'Rode kangoeroe', this)">Boom kangoeroe</div>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="question" id="q4" style="display:none">
+                <p>7. </p>
+                <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">De graslanden</div>
+                <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">De woestijnen</div>
+                <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">De bossen</div>
+                <p class="feedback"></p>
+            </div>
+
+            <!-- Voeg hier meer vragen toe -->
+            <div class="open-question" id="q11" style="display:none">
+                <p>11. Beschrijf het dieet van een kangoeroe.</p>
+                <textarea id="q11-answer" rows="4" cols="50"></textarea>
+                <input type="button" value="Controleer antwoord" onclick="checkOpenAnswer('q11')">
+                <p class="feedback"></p>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+<script src="quiz.js"></script>
+</html>
