@@ -120,7 +120,7 @@
 
     .quizVraag {
       width: 30vw;
-      font-size: 50pt;
+      font-size: 35pt;
       font-family: font2;
       text-align: center;
       margin-left: 7.5vw;
@@ -141,7 +141,7 @@
     }
 
     .antwoorden button h1 {
-      font-size: 60pt;
+      font-size: 35pt;
       margin-top: 2vh;
       font-family: font2;
     }
@@ -179,4 +179,16 @@
       font-size: 15pt;
       margin-left: 23.5vw;
     }
+
+.quizScore {
+  width: 35vw;
+  height: 30vh;
+  border-radius: 30px;
+  background-color: rgb(85, 45, 0);
+  margin-left: 33vw;
+  margin-top: 2vh;
+  font-family: font2;
+  font-size: 110pt;
+  text-align: center;
+}
 

@@ -30,19 +30,151 @@
     </nav>
     </div>
 
-    <div class="quizInfo">
+    <div class="quizInfo" id="q1">
         <h1 class="quizVraag">Hoeveel soorten beren zijn er in de wereld?</h1>
         <div class="antwoorden">
             <div class="antwoord1">
-                <button><h1>5</h1></button>
-                <button><h1>8</h1></button>
+                <button onclick="checkAnswer(this)" id="A"><h1>5</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>8</h1></button>
             </div>
             <div class="antwoord2">
-                <button><h1>10</h1></button>
-                <button><h1>12</h1></button>
+                <button onclick="checkAnswer(this)" id="C"><h1>10</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>12</h1></button>
             </div>
         </div>
     </div>
+
+    <div class="quizInfo" id="q2" style="display: none;">
+        <h1 class="quizVraag">Wat eten beren voornamelijk?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A"><h1>Vlees</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>Fruit</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C"><h1>Gras</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>Alleseters</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q3" style="display: none;">
+        <h1 class="quizVraag">Welke beer wordt beschouwd als de grootste ter wereld?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A"><h1>Grizzlybeer</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>IJsbeer</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C"><h1>Kodiakbeer</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>Panda</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q4" style="display: none;">
+        <h1 class="quizVraag">Wat is een mannelijke beer?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A"><h1>Beer</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>Ram</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C"><h1>Bull</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>Boar</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q5" style="display: none;">
+        <h1 class="quizVraag">Welke beer staat bekend om zijn witte vacht?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A"><h1>IJsbeer</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>Grizzlybeer</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C"><h1>Zwarte beer</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>Kodiakbeer</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q6" style="display: none;">
+        <h1 class="quizVraag">Wat is de wetenschappelijke naam voor de bruine beer?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A"><h1>Ursus maritimus</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>Ursus arctos</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C"><h1>Ursus americanus</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>Ursus thibetanus</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q7" style="display: none;">
+        <h1 class="quizVraag">Welk continent heeft geen in het wild levende beren?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A"><h1>Afrika</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>Europa</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C"><h1>Zuid-Amerika</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>Azië</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q8" style="display: none;">
+        <h1 class="quizVraag">Hoe noemen we de slaapperiode van beren in de winter?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A"><h1>Hibernatie</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>Rustperiode</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C"><h1>Winterslaap</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>Sluimering</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q9" style="display: none;">
+        <h1 class="quizVraag">Wat is een groep beren bekend als?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A"><h1>Kudde</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>Troep</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C"><h1>Koppel</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>Clan</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q10" style="display: none;">
+        <h1 class="quizVraag">Welke van deze beren is niet inheems in Noord-Amerika?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A"><h1>Grizzlybeer</h1></button>
+                <button onclick="checkAnswer(this)" id="B"><h1>Zwarte beer</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C"><h1>Panda</h1></button>
+                <button onclick="checkAnswer(this)" id="D"><h1>Bruine beer</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizScore" id="quizScore" style="display: none;">
+
+    </div>
+
+    
 
     <div class="leesBeerInfo">
         <h1>LEES DE TEKST HIERONDER VOOR INFO DAT HELP BIJ DE QUIZ</h1>
@@ -76,5 +208,7 @@
             Nu je wat meer weet over beren, ben je klaar om de uitdaging aan te gaan en je kennis te testen met onze berenquiz! Veel succes!
         </p>
     </div>
+
+    <script src="beren.js"></script>
 </body>
 </html>
