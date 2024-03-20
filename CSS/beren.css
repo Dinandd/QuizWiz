@@ -118,6 +118,23 @@
       margin-top: 10vh;
     }
 
+    .quizInfoOpen {
+      font-family: font2;
+      font-size: 50pt;
+      text-align: center;
+      background-color: rgb(94, 53, 1);
+      width: 45vw;
+      height: 60vh;
+      border-radius: 120px;
+      margin-left: 27.5vw;
+      margin-top: 10vh;
+    }
+
+    .quizInfoOpenP {
+      width: 40vw;
+      margin-left: 2.5vw;
+    }
+
     .quizVraag {
       width: 30vw;
       font-size: 35pt;
@@ -192,3 +209,10 @@
   text-align: center;
 }
 
+#quizOpenBtn {
+  position: absolute;
+  margin-top: 8vh;
+  margin-left: -15.9vw;
+  font-size: 20pt;
+  font-family: font1;
+}
