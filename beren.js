@@ -14,7 +14,7 @@ function checkAnswer(button) {
         button.style.backgroundColor = "red"; // Incorrect answer, turn button red
     }
 
-    setTimeout(nextQuestion, 100);
+    setTimeout(nextQuestion, 1500);
 }
 
 
