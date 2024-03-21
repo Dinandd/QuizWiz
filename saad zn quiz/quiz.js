@@ -16,7 +16,7 @@ function checkAnswer(questionId, correctAnswer, element) {
     }
 
     // Ga na 5 seconden naar de volgende vraag
-    setTimeout(nextQuestion, 1500);
+    setTimeout(nextQuestion, 1000);
 }
 
 function nextQuestion() {
@@ -38,4 +38,54 @@ function checkOpenAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes eten voornamelijk gras.";
     }
+    // Ga na 4 seconden naar de volgende vraag
+    setTimeout(nextQuestion, 4000);
+}
+
+function checkOpenAnswer(questionId) {
+    let answer = document.getElementById(questionId + "-answer").value;
+    // Hier kun je een eenvoudige controle toevoegen, bijvoorbeeld:
+    if (answer.includes("Hoppen")) {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes bewegen door te hoppen";
+    } else {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
+    }
+    // Ga na 4 seconden naar de volgende vraag
+    setTimeout(nextQuestion, 4000);
+}
+
+function checkOpenAnswer(questionId) {
+    let answer = document.getElementById(questionId + "-answer").value;
+    // Hier kun je een eenvoudige controle toevoegen, bijvoorbeeld:
+    if (answer.includes("Hoppen")) {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes bewegen door te hoppen";
+    } else {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
+    }
+    // Ga na 4 seconden naar de volgende vraag
+    setTimeout(nextQuestion, 4000);
+}
+
+
+function checkOpenAnswer(questionId) {
+    let answer = document.getElementById(questionId + "-answer").value;
+    // Hier kun je een eenvoudige controle toevoegen, bijvoorbeeld:
+    if (answer.includes("Lichaamstaal", "Stompen op de grond")) {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes communiceren met behulp van lichaamstaal";
+    } else {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
+    }
+    // Ga na 4 seconden naar de volgende vraag
+    setTimeout(nextQuestion, 4000);
+}
+function checkOpenAnswer(questionId) {
+    let answer = document.getElementById(questionId + "-answer").value;
+    // Hier kun je een eenvoudige controle toevoegen, bijvoorbeeld:
+    if (answer.includes("Lichaamstaal", "Stompen op de grond")) {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes communiceren met behulp van lichaamstaal";
+    } else {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
+    }
+    // Ga na 4 seconden naar de volgende vraag
+    setTimeout(nextQuestion, 4000);
 }
