@@ -104,8 +104,69 @@
       display: block;
     }
   
-    /* .arrow-down{
-      font-size: 16pt;
-    } */
+    #quiz-container {
+      height: auto;
+      width: 50%;
+      margin: auto;
+      padding: 20px;
+      border-radius: 4px;
+      text-align: center;
+  }
+  .vraag-container{
+      background-color: rgb(177, 154, 123);
+      width: 100vh;
+      height: 13vh;
+      text-align: center;
+      border: solid chocolate;
+      border-radius: 8px;
+  }
   
+  .vraag-container h1{
+  padding: 1vh;
+  }
+  .question {
+      margin-top: 15vh;
+
+  }
   
+  .answer {
+      font-size: 20pt;
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      background-color: #a78d52;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 17vw;
+      user-select: none;
+      text-align: center;
+  }
+  
+  .open-question textarea {
+      width: 100%;
+      padding-top: 3vh;
+      background-color: rgb(250, 250, 250);
+      font-weight: bold;
+  }
+  
+  #result {
+      margin-top: 100px;
+      font-weight: bold;
+      
+  }
+  /* Voeg deze regel toe aan je CSS om te voorkomen dat de gebruiker meerdere antwoorden selecteert */
+  .answer.disabled {
+      pointer-events: none;
+      opacity: 0.6;
+  }
+  
+  .feedback{
+    display: ruby;
+      width: 20vw;
+      height: 4vh;
+      background-color: #ab760470;
+      text-align: center;
+      border-radius: 8px;
+      padding-top: 1vh;
+      margin-bottom: -3vh;
+  }

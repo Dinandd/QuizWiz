@@ -16,7 +16,7 @@ function checkAnswer(questionId, correctAnswer, element) {
     }
 
     // Ga na 5 seconden naar de volgende vraag
-    setTimeout(nextQuestion, 1000);
+    setTimeout(nextQuestion, 3000);
 }
 
 function nextQuestion() {
@@ -30,62 +30,52 @@ function nextQuestion() {
     document.getElementById("q" + currentQuestion).style.display = "block";
 }
 
-function checkOpenAnswer(questionId) {
+function checkGrassAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value;
-    // Hier kun je een eenvoudige controle toevoegen, bijvoorbeeld:
     if (answer.includes("gras")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed gedaan! Kangoeroes eten inderdaad gras.";
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes eten voornamelijk gras.";
     }
-    // Ga na 4 seconden naar de volgende vraag
     setTimeout(nextQuestion, 4000);
 }
 
-function checkOpenAnswer(questionId) {
+function checkHoppenAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value;
-    // Hier kun je een eenvoudige controle toevoegen, bijvoorbeeld:
     if (answer.includes("Hoppen")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes bewegen door te hoppen";
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
     }
-    // Ga na 4 seconden naar de volgende vraag
     setTimeout(nextQuestion, 4000);
 }
 
-function checkOpenAnswer(questionId) {
+function checkBedreigingAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value;
-    // Hier kun je een eenvoudige controle toevoegen, bijvoorbeeld:
-    if (answer.includes("Hoppen")) {
-        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes bewegen door te hoppen";
+    if (answer.includes("jacht")) {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes zijn bedreigd door jacht.";
     } else {
-        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes zijn bedreigd door jacht.";
     }
-    // Ga na 4 seconden naar de volgende vraag
     setTimeout(nextQuestion, 4000);
 }
 
-
-function checkOpenAnswer(questionId) {
+function checkTaalAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value;
-    // Hier kun je een eenvoudige controle toevoegen, bijvoorbeeld:
-    if (answer.includes("Lichaamstaal", "Stompen op de grond")) {
-        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes communiceren met behulp van lichaamstaal";
+    if (answer.includes("lichaamstaal")) {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes communiceren met hun lichaamstaal.";
     } else {
-        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes communiceren met hun lichaamstaal.";
     }
-    // Ga na 4 seconden naar de volgende vraag
     setTimeout(nextQuestion, 4000);
 }
-function checkOpenAnswer(questionId) {
+
+function checkGameAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value;
-    // Hier kun je een eenvoudige controle toevoegen, bijvoorbeeld:
-    if (answer.includes("Lichaamstaal", "Stompen op de grond")) {
-        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes communiceren met behulp van lichaamstaal";
+    if (answer.includes("Tekken")) {
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! De kangoeroes verschijnt in de videogame Tekken.";
     } else {
-        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
+        document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. De kangoeroes verschijnt in de videogame Tekken.";
     }
-    // Ga na 4 seconden naar de volgende vraag
     setTimeout(nextQuestion, 4000);
 }
