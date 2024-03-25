@@ -1,0 +1,149 @@
+@font-face {
+    font-family: font1;
+    src: url(../fonts/lemon_milk/LEMONMILK-Medium.otf);
+  }
+  
+  @font-face {
+    font-family: 'font2';
+    src: url(../fonts/peach_cake/PeachCake.otf);
+  }
+  
+  body{
+    background-image: url(/pics/home/BackgroundSiteQuizWiz.png);
+    background-size: cover;
+  }
+  .logo{
+    height: 7vh;
+  }
+  .pages{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    margin-left: 75vw;
+    margin-top: 20px;
+  }
+  .buttons{
+    font-family: font1;
+  }
+  /* Navbar container */
+  .quizwiz{
+      position: absolute;
+      color: #fff;
+      font-family: font2;
+      font-size: 60pt;
+      margin-top: 0vh;
+      margin-left: 92vh;
+  }
+  
+  .navbar {
+      overflow: hidden;
+      background-color: rgb(155 7 7);
+      height: 10vh;
+      width: 213vh;
+      margin-left: -1vh;
+      margin-top: -1vh;
+    }
+    /* Links inside the navbar */
+  
+    .navbar a {
+      float: left;
+      font-size: 18pt;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+      font-family: font1;
+  
+    }
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 16pt;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(122, 0, 0);
+    }
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #630000;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #530000;
+    }
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    /* .arrow-down{
+      font-size: 16pt;
+    } */
+  
+
+      .foto-container {
+        margin: 10px;
+        display: inline-flex; /* Zorgt ervoor dat containers naast elkaar getoond worden */
+        margin-left: 30vh;
+        margin-top: 13vh;
+      }
+      
+      .foto {
+        width: 25vh;
+        cursor: pointer; /* Cursor verandert naar klikbare link stijl */
+        transition: transform 0.8s; /* Vloeiende animatie voor de foto */
+      }
+      
+      .info {
+        display: none; /* Verbergt de tekst standaard */
+        padding: 10px;
+        text-align: left;
+        font-family: font2;
+        font-size: 20pt;
+      }
+      
+      /* Klassen om de animatie en zichtbaarheid te regelen */
+      .show-info .foto {
+        transform: translateY(-100px); /* Verplaatst de foto omhoog */
+      }
+      
+      .show-info .info {
+        display: block; /* Toont de tekst */
+        background-color: #fa3c3c;
+        border-radius: 20px;
+        margin-top: 30vh;
+        position: absolute;
+        width: 30vw;
+        text-align: center;
+      }
+
+      .info{
+        margin-left: -20vh;
+      }
