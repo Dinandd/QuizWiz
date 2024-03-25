@@ -10,7 +10,7 @@
   
   body{
     background-image: url(../pics/kangaroo/kangaroo.png);
-    background-size: cover;
+    background-size: 100%;
   }
   
   .logo{
@@ -38,6 +38,8 @@
   }
   
   .navbar {
+    position:fixed;
+    top: 0;
       overflow: hidden;
       background-color: #d6ab61;
       height: 10vh;
@@ -57,14 +59,16 @@
     }
     /* The dropdown container */
     .dropdown {
+      position: fixed;
       float: left;
       overflow: hidden;
       font-family: font1;
+      margin-left: 30vh;
   
     }
     /* Dropdown button */
     .dropdown .dropbtn {
-      font-size: 16pt;
+      font-size: 17pt;
       border: none;
       outline: none;
       color: white;
@@ -80,7 +84,8 @@
     /* Dropdown content (hidden by default) */
     .dropdown-content {
       display: none;
-      position: absolute;
+      position: sticky;
+      top: 0;
       background-color: #964B00;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -88,6 +93,7 @@
     }
     /* Links inside the dropdown */
     .dropdown-content a {
+      position: sticky;
       float: none;
       color: black;
       padding: 12px 16px;
@@ -111,11 +117,12 @@
       padding: 20px;
       border-radius: 4px;
       text-align: center;
+      margin-top: 20vh;
   }
   .vraag-container{
       background-color: rgb(177, 154, 123);
       width: 100vh;
-      height: 13vh;
+      height: 15vh;
       text-align: center;
       border: solid chocolate;
       border-radius: 8px;
@@ -123,6 +130,8 @@
   
   .vraag-container h1{
   padding: 1vh;
+  font-family: font2;
+  font-size: 30pt;
   }
   .question {
       margin-top: 15vh;
@@ -130,6 +139,7 @@
   }
   
   .answer {
+    font-family: font1;
       font-size: 20pt;
       display: inline-block;
       margin: 10px;
@@ -161,12 +171,40 @@
   }
   
   .feedback{
-    display: ruby;
-      width: 20vw;
-      height: 4vh;
+      position: absolute;
+      display: ruby;
       background-color: #ab760470;
       text-align: center;
       border-radius: 8px;
       padding-top: 1vh;
-      margin-bottom: -3vh;
+      width: auto; 
+      height: auto;
+  }
+
+  .feedback-container {
+    font-size: 15pt;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    width: 50vh;
+  }
+
+  .vragen{
+    margin-top: 3vh;
+  }
+
+  .kang-info{
+    width: 60rem;
+    height: 40vh;
+    background-color: #d6ab61;
+    position: absolute;
+    margin-top: 34vh;
+    margin-left: 10vh;
+    font-size: 14pt;
+    border-radius: 30px;
+    margin-left: 51vh;;
+  }
+  .kang-info h2{
+    width: 58rem;
+    padding-left: 20px;
+    font-family: font2;
   }
