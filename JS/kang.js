@@ -1,10 +1,12 @@
 // Houd bij welke vraag momenteel wordt weergegeven
 let currentQuestion = 1;
+let score = 0;
 
 function checkAnswer(questionId, correctAnswer, element) {
     let selectedAnswer = element.innerText;
     if (selectedAnswer == correctAnswer) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Correct!";
+        score++;
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Fout. Het juiste antwoord is " + correctAnswer + ".";
     }
@@ -78,4 +80,14 @@ function checkGameAnswer(questionId) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. De kangoeroes verschijnt in de videogame Tekken.";
     }
     setTimeout(nextQuestion, 4000);
+}
+
+function showScore() {
+    // Verberg de laatste vraag
+    document.getElementById("q" + currentQuestion).style.display = "none";
+
+    // Toon de score
+    let scoreElement = document.getElementById("score");
+    scoreElement.innerHTML = "Je score is: " + score + " van " + currentQuestion;
+    scoreElement.style.display = "block";
 }

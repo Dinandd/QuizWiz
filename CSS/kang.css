@@ -197,14 +197,25 @@
     height: 40vh;
     background-color: #d6ab61de;
     position: absolute;
-    margin-top: 34vh;
-    margin-left: 10vh;
+    margin-top: 14vh;
     font-size: 14pt;
     border-radius: 30px;
-    margin-left: 51vh;;
+    margin-left: 57vh;;
   }
   .kang-info h2{
     width: 58rem;
     padding-left: 20px;
     font-family: font2;
+  }
+
+  .lees{
+    width: 37.5vh;
+    height: 5vh;
+    background-color: #a78d52;
+    border-radius: 2vh;
+    margin-left: 85vh;
+  }
+  .lees h2{
+    font-family: font1;
+    padding: 1vh;
   }
