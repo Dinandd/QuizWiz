@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beren Quiz</title>
+    <link rel="stylesheet" href="CSS/beren.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="quizwiz">QuizWiz</h1>
+    <nav>
+        <a href="index.html">
+            <img class="logo" src="pics/home/logo.png" alt="Logo">
+        </a>
+        <div class="pages">
+        <a class="buttons" href="index.html">Home</a>
+        <a class="buttons" href="Makers.html">Makers</a>
+        <div class="dropdown">
+            <button class="dropbtn">Quizzes
+            </button>
+        <div class="dropdown-content">
+            <a href="beren.html">Beren</a>
+            <a href="kang.html">Kangaroo</a>
+            <a href="haai.html">Haaien</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+    </div>
+
+    <div class="quizInfo" id="q1">
+        <h1 class="quizVraag">Hoeveel soorten beren zijn er in de wereld?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>5</h1></button>
+                <button onclick="checkAnswer(this)"><h1>8</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>10</h1></button>
+                <button onclick="checkAnswer(this)"><h1>12</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q2" style="display: none;">
+        <h1 class="quizVraag">Wat eten beren voornamelijk?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>Vlees</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Fruit</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>Gras</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Alleseters</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q3" style="display: none;">
+        <h1 class="quizVraag">Welke beer wordt beschouwd als de grootste ter wereld?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>Grizzlybeer</h1></button>
+                <button onclick="checkAnswer(this)"><h1>IJsbeer</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>Kodiakbeer</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Panda</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q4" style="display: none;">
+        <h1 class="quizVraag">Wat is een mannelijke beer?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>Beer</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Ram</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>Bull</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Boar</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q5" style="display: none;">
+        <h1 class="quizVraag">Welke beer staat bekend om zijn witte vacht?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>IJsbeer</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Grizzlybeer</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>Zwarte beer</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Kodiakbeer</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q6" style="display: none;">
+        <h1 class="quizVraag">Wat is de wetenschappelijke naam voor de bruine beer?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>Ursus maritimus</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Ursus arctos</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>Ursus americanus</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Ursus thibetanus</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q7" style="display: none;">
+        <h1 class="quizVraag">Welk continent heeft geen in het wild levende beren?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>Afrika</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Europa</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>Zuid-Amerika</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Azië</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q8" style="display: none;">
+        <h1 class="quizVraag">Hoe noemen we de slaapperiode van beren in de winter?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>Hibernatie</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Rustperiode</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>Winterslaap</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Sluimering</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q9" style="display: none;">
+        <h1 class="quizVraag">Wat is een groep beren bekend als?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>Kudde</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Troep</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>Koppel</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Clan</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfo" id="q10" style="display: none;">
+        <h1 class="quizVraag">Welke van deze beren is niet inheems in Noord-Amerika?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)"><h1>Grizzlybeer</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Zwarte beer</h1></button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)"><h1>Panda</h1></button>
+                <button onclick="checkAnswer(this)"><h1>Bruine beer</h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizInfoOpen" id="q11" style="display:none">
+        <p class="quizInfoOpenP">Hoe kunnen we weten of een beer een grizzly of een bruine beer is?</p>
+        <textarea id="q11-answer" rows="2" cols="50"></textarea>
+        <input id="quizOpenBtn" type="button" value="Next Question" onclick="checkOpenAnswer('q11')">
+    </div>
+
+    <div class="quizInfoOpen" id="q12" style="display:none">
+        <p class="quizInfoOpenP">Wat eet een beer het meest? (1 ding)</p>
+        <textarea id="q12-answer" rows="2" cols="50"></textarea>
+        <input id="quizOpenBtn" type="button" value="Next Question" onclick="checkOpenAnswer('q12')">
+    </div>
+
+    <div class="quizInfoOpen" id="q13" style="display:none">
+        <p class="quizInfoOpenP">Hoelang slapen beren in de winter?</p>
+        <textarea id="q13-answer" rows="2" cols="50"></textarea>
+        <input id="quizOpenBtn" type="button" value="Next Question" onclick="checkOpenAnswer('q13')">
+    </div>
+
+    <div class="quizInfoOpen" id="q14" style="display:none">
+        <p class="quizInfoOpenP">Waarom is het slecht om beren in het wild te voeren?</p>
+        <textarea id="q14-answer" rows="2" cols="50"></textarea>
+        <input id="quizOpenBtn" type="button" value="Next Question" onclick="checkOpenAnswer('q14')">
+    </div>
+
+    <div class="quizInfoOpen" id="q15" style="display:none">
+        <p class="quizInfoOpenP">Hoe praten beren met elkaar?</p>
+        <textarea id="q15-answer" rows="2" cols="50"></textarea>
+        <input id="quizOpenBtn" type="button" value="Next Question" onclick="checkOpenAnswer('q15')">
+    </div>
+
+    <div class="quizScore" id="quizScore" style="display: none;">
+
+    </div>
+
+    
+
+    <div class="leesBeerInfo" id="leesBeerInfo">
+        <h1>LEES DE TEKST HIERONDER VOOR INFO DAT HELPT BIJ DE QUIZ</h1>
+    </div>
+
+    <div class="beerInfo" id="beerInfo">
+        <h1>Welkom bij de berenquiz!</h1>
+
+        <p>
+            Beren zijn majestueuze en fascinerende dieren die in verschillende delen van de wereld voorkomen. 
+            Van de krachtige grizzlybeer tot de iconische ijsbeer, elke beer heeft zijn unieke kenmerken en leefomgevingen.
+        </p>
+
+        <p>
+            Wist je dat beren bekend staan als alleseters? 
+            Ze voeden zich met een gevarieerd dieet, variërend van planten en bessen tot vis en kleine dieren. 
+            Sommige berensoorten, zoals de panda, zijn gespecialiseerd in het eten van bamboe, terwijl anderen, zoals de bruine beer, een breder dieet hebben.
+        </p>
+
+        <p>
+            Een interessant feit over beren is dat ze een winterslaap houden tijdens de koude maanden. 
+            Tijdens deze periode verminderen ze hun activiteit en gaan ze in een diepe slaap om energie te besparen en te overleven in barre omstandigheden.
+        </p>
+
+        <p>
+            Berencommunicatie omvat een scala aan geluiden, zoals grommen en brullen, evenals lichaamstaal, zoals houding en gezichtsuitdrukkingen. 
+            Dit stelt hen in staat om met elkaar te communiceren en hun territorium te markeren.
+        </p>
+
+        <p>
+            Nu je wat meer weet over beren, ben je klaar om de uitdaging aan te gaan en je kennis te testen met onze berenquiz! Veel succes!
+        </p>
+    </div>
+
+    <script src="JS/beren.js"></script>
+</body>
+</html>
