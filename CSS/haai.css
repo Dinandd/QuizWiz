@@ -31,7 +31,7 @@
   /* Navbar container */
   .quizwiz{
       position: absolute;
-      color: #fff;
+      color: #ffffff;
       font-family: font2;
       font-size: 60pt;
       margin-top: 0vh;
@@ -76,13 +76,13 @@
     }
     /* Add a red background color to navbar links on hover */
     .navbar a:hover, .dropdown:hover .dropbtn {
-      background-color: rgb(0, 52, 7);
+      background-color: rgb(14, 188, 191);
     }
     /* Dropdown content (hidden by default) */
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #002e02;
+      background-color: #0e1960;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
@@ -201,7 +201,7 @@
   width: 35vw;
   height: 30vh;
   border-radius: 30px;
-  background-color: rgb(85, 45, 0);
+  background-color: rgb(0, 52, 85);
   margin-left: 33vw;
   margin-top: 2vh;
   font-family: font2;
