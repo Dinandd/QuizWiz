@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haaien Quiz</title>
+    <link rel="stylesheet" href="CSS/haai.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="quizwiz">QuizWiz</h1>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="pics/home/logo.png" alt="Logo">
+            </a>
+            <div class="pages">
+                <a class="buttons" href="index.html">Home</a>
+                <a class="buttons" href="Makers.html">Makers</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Quizzes
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="beren.html">Beren</a>
+                        <a href="kang.html">Kangaroo</a>
+                        <a href="haai.html">Haaien</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="quizInfo" id="q1">
+        <h1 class="quizVraag">Wat is de grootste haaiensoort?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>Witte haai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>Walvishaai</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>Groenlandse haai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>Reuzenhaai</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quizInfo" id="q2" style="display: none;">
+        <h1 class="quizVraag">Welke haaiensoort staat bekend als de "mensenhaai" vanwege zijn frequente interactie met duikers?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>Tijgerhaai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>Oceanische witpunthaai</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>Stierhaai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>Grote hamerhaai</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quizInfo" id="q3" style="display: none;">
+        <h1 class="quizVraag">Welke haaiensoort heeft een platte, breed uitlopende snuit en wordt vaak gezien in ondiepe kustwateren?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>Verpleegsterhaai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>Hamerhaai</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>Zandtijgerhaai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>Grote witte haai</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quizInfo" id="q4" style="display: none;">
+        <h1 class="quizVraag">Hoe heet de haaiensoort die bekend staat om zijn lange, slanke lichaam en bewoont diepe oceaanwateren?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>Voshaai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>Grote witte haai</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>Haringhaai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>Blauwe haai</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quizInfo" id="q5" style="display: none;">
+        <h1 class="quizVraag">Welke haaiensoort heeft een reputatie voor het vaker aanvallen van mensen dan andere haaien?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>Zwarte tiphaai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>Witte haai</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>Stierhaai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>Oceanische witpunthaai</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quizInfo" id="q6" style="display: none;">
+        <h1 class="quizVraag">Wat is het belangrijkste zintuig van haaien dat hen helpt bij het detecteren van prooien?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>Geurzin</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>Gezichtsvermogen</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>Elektroreceptie</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>Gehoor</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quizInfo" id="q7" style="display: none;">
+        <h1 class="quizVraag">Hoeveel rijen tanden hebben haaien gemiddeld in hun leven vervangen?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>1-2 rijen</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>3-4 rijen</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>5-6 rijen</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>7-8 rijen</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quizInfo" id="q8" style="display: none;">
+        <h1 class="quizVraag">Welke haaiensoort staat bekend om zijn unieke uiterlijk met een grote, platte kop en een brede bek vol tanden?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>Grote hamerhaai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>Gitaarhaai</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>Megalodon</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>Goblinhaai</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quizInfo" id="q9" style="display: none;">
+        <h1 class="quizVraag">Welke haaiensoort heeft de meest krachtige beet van alle gewervelde dieren?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>Witte haai</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>Tijgerhaai</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>Megalodon</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>Bultrughaai</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quizInfo" id="q10" style="display: none;">
+        <h1 class="quizVraag">Hoe worden pasgeboren haaien genoemd?</h1>
+        <div class="antwoorden">
+            <div class="antwoord1">
+                <button onclick="checkAnswer(this)" id="A">
+                    <h1>Puppies</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="B">
+                    <h1>Kittens</h1>
+                </button>
+            </div>
+            <div class="antwoord2">
+                <button onclick="checkAnswer(this)" id="C">
+                    <h1>Pups</h1>
+                </button>
+                <button onclick="checkAnswer(this)" id="D">
+                    <h1>Kalveren</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="quizScore" id="quizScore" style="display: none;">
+
+    </div>
+
+
+
+    <div class="leesHaaiInfo" id="leesHaaiInfo">
+        <h1>LEES DE TEKST HIERONDER VOOR INFO DAT HELPT BIJ DE QUIZ</h1>
+    </div>
+
+    <div class="haaiInfo" id="haaiInfo">
+        <br>
+        <h1>Welkom bij de haaienquiz!</h1>
+
+        <p>
+            Haaien vormen een diverse groep van cartilaginewezens, wat betekent dat hun skelet voornamelijk
+            uit kraakbeen bestaat in plaats van bot. Deze diversiteit strekt zich uit tot hun voedingsgewoonten,
+            voortplantingsstrategieën en levensstijlen.
+        </p>
+
+        <p>
+            Als toppredatoren spelen haaien een cruciale rol in het mariene ecosysteem door populaties
+            van prooidieren te reguleren. Hun afwezigheid kan leiden tot verstoringen in de voedselketen en ecosystemen.
+        </p>
+
+        <p>
+            Haaien bestaan al meer dan 400 miljoen jaar en hebben gedurende die tijd een opmerkelijke evolutie
+            doorgemaakt. Sommige fossielen tonen aan dat sommige haaiensoorten reusachtig waren, zoals de uitgestorven
+            Megalodon, die tot wel 18 meter lang kon worden.
+        </p>
+
+        <p>
+            Hoewel sommige haaien wijdverspreid zijn en verschillende habitats bewonen, hebben
+            anderen specifieke voorkeuren. Sommige soorten leven bijvoorbeeld voornamelijk in koudere wateren, terwijl
+            andere de voorkeur geven aan tropische of gematigde gebieden.
+        </p>
+
+        <p>
+            Haaien worden wereldwijd bedreigd door overbevissing, bijvangst,
+            habitatvernietiging en de illegale handel in haaienvinnen. Er worden echter inspanningen geleverd om haaien
+            te beschermen, waaronder het instellen van beschermde gebieden en internationale afspraken om de handel in
+            bedreigde haaiensoorten te reguleren.
+        </p>
+<br>
+        <p>
+            Nu je wat meer weet over haaien, ben je klaar om de uitdaging aan te gaan en je kennis te testen met onze
+            haaienquiz! Veel succes!
+        </p>
+        <br>
+    </div>
+
+    <script src="JS/haai.js"></script>
+</body>
+
+</html>

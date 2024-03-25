@@ -1,0 +1,218 @@
+@font-face {
+    font-family: font1;
+    src: url(../fonts/lemon_milk/LEMONMILK-Medium.otf);
+  }
+  
+  @font-face {
+    font-family: 'font2';
+    src: url(../fonts/peach_cake/PeachCake.otf);
+  }
+  
+  body {
+    background-image: url(../pics/haai/haai.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .logo{
+    height: 7vh;
+  }
+  .pages{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    margin-left: 75vw;
+    margin-top: 20px;
+  }
+  .buttons{
+    font-family: font1;
+  }
+  /* Navbar container */
+  .quizwiz{
+      position: absolute;
+      color: #ffffff;
+      font-family: font2;
+      font-size: 60pt;
+      margin-top: 0vh;
+      margin-left: 92vh;
+  }
+  
+  .navbar {
+      overflow: hidden;
+      background-color: rgb(3, 32, 126);
+      height: 10vh;
+      width: 210.9vh;
+      margin-left: -1vh;
+      margin-top: -1vh;
+    }
+    /* Links inside the navbar */
+  
+    .navbar a {
+      float: left;
+      font-size: 18pt;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+      font-family: font1;
+  
+    }
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 16pt;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(14, 188, 191);
+    }
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #0e1960;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #01250b;
+    }
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    /* .arrow-down{
+      font-size: 16pt;
+    } */
+  
+    .quizInfo {
+      background-color: rgb(10, 16, 104);
+      width: 45vw;
+      height: 60vh;
+      border-radius: 120px;
+      margin-left: 27.5vw;
+      margin-top: 10vh;
+    }
+
+    .quizInfoOpen {
+      font-family: font2;
+      font-size: 50pt;
+      text-align: center;
+      background-color:  rgb(10, 16, 104);
+      width: 45vw;
+      height: 60vh;
+      border-radius: 120px;
+      margin-left: 27.5vw;
+      margin-top: 10vh;
+    }
+
+    .quizInfoOpenP {
+      width: 40vw;
+      margin-left: 2.5vw;
+    }
+
+    .quizVraag {
+      width: 30vw;
+      font-size: 35pt;
+      font-family: font2;
+      text-align: center;
+      margin-left: 7.5vw;
+    }
+
+    .antwoorden {
+      margin-left: 12vw;
+    }
+
+    .antwoorden button {
+      background-color: rgb(10, 202, 228);
+      width: 15vw;
+      height: 14vh;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .antwoorden button h1 {
+      font-size: 35pt;
+      margin-top: 2vh;
+      font-family: font2;
+    }
+
+    .antwoord1 {
+      display: flex;
+      justify-content: space-evenly;
+      margin-left: -12vw;
+    }
+
+    .antwoord2 {
+      display: flex;
+      justify-content: space-evenly;
+      margin-left: -12vw;
+      margin-top: 4vh;
+    }
+
+    .haaiInfo {
+      background-color: rgb(10, 16, 104);
+      width: 40vw;
+      border-radius: 30px;
+      font-family: font1;
+      font-size: 16pt;
+      margin-left: 30vw;
+      margin-top: 30vh;
+      text-align: center;
+    }
+
+    .leesHaaiInfo {
+      background-color:  rgb(10, 16, 104);
+      width: 53vw;
+      border-radius: 30px;
+      text-align: center;
+      font-family: font1;
+      font-size: 15pt;
+      margin-left: 23.5vw;
+    }
+
+.quizScore {
+  width: 35vw;
+  height: 30vh;
+  border-radius: 30px;
+  background-color: rgb(0, 52, 85);
+  margin-left: 33vw;
+  margin-top: 2vh;
+  font-family: font2;
+  font-size: 110pt;
+  text-align: center;
+}
+
+#quizOpenBtn {
+  position: absolute;
+  margin-top: 8vh;
+  margin-left: -15.9vw;
+  font-size: 20pt;
+  font-family: font1;
+}
