@@ -30,14 +30,14 @@
     font-family: font2;
     font-size: 60pt;
     margin-top: 0vh;
-    margin-left: 92vh;
+    margin-left: 85vh;
 }
 
 .navbar {
     overflow: hidden;
     background-color: rgb(155 7 7);
     height: 10vh;
-    width: 210.8vh;
+    width: 100.1vw;
     margin-left: -1vh;
     margin-top: -1vh;
   }
