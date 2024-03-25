@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kangaroo</title>
+    <link rel="stylesheet" href="CSS/kang.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="quizwiz">QuizWiz</h1>
+    <nav>
+        <a href="index.html">
+            <img class="logo" src="pics/home/logo.png" alt="Logo">
+        </a>
+        <div class="pages">
+        <a class="buttons" href="index.html">Home</a>
+        <a class="buttons" href="Makers.html">Makers</a>
+        <div class="dropdown">
+            <button class="dropbtn">Quizzes
+            </button>
+        <div class="dropdown-content">
+            <a href="beren.html">Beren</a>
+            <a href="kang.html">Kangaroo</a>
+            <a href="haai.html">Haaien</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+        </div>
+
+<!-- Quiz -->
+<div id="quiz-container">
+    <form id="quiz-form">
+        <div class="question" id="q1">
+            <div class="vraag-container">
+            <h1>1. Hoeveel soorten kangoeroes zijn er in Australië?</h1>
+        </div>
+        <div class="vragen">
+
+            <div class="answer" onclick="checkAnswer('q1', '8', this)">4</div>
+            <div class="answer" onclick="checkAnswer('q1', '8', this)">6</div>
+            </div><div class="answer" onclick="checkAnswer('q1', '8',
+             this)">8</div>
+            <div class="feedback-container">
+            <h2 class="feedback"></h2>        
+            </div>
+        </div>
+        
+        <div class="question" id="q2" style="display:none">
+            <div class="vraag-container">
+            <h1>2. Wat is de gemiddelde levensduur van een kangoeroe in het wild?</h1>
+            </div>
+            <div class="vragen">
+            <div class="answer" onclick="checkAnswer('q2', '6', this)">2</div>
+            <div class="answer" onclick="checkAnswer('q2', '6', this)">6</div>
+            <div class="answer" onclick="checkAnswer('q2', '6', this)">10</div>
+            </div>    
+            <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="question" id="q3" style="display:none">
+            <div class="vraag-container">
+            <h1>3. Wat is de maximale snelheid die een kangoeroe kan bereiken?</h1>
+            </div>
+            <div class="vragen">
+            <div class="answer" onclick="checkAnswer('q3', '70 km/h', this)">50 km/h</div>
+            <div class="answer" onclick="checkAnswer('q3', '70 km/h', this)">70 km/h</div>
+            <div class="answer" onclick="checkAnswer('q3', '70 km/h', this)">90 km/h</div>
+            </div>    
+            <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="question" id="q4" style="display:none">
+            <div class="vraag-container">
+            <h1>4. Hoe noemen we de baby van een kangoeroe?</h1>
+            </div>
+            <div class="vragen">
+            <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">Welp</div>
+            <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">Kalf</div>
+            <div class="answer" onclick="checkAnswer('q4', 'Joey', this)">Joey</div>
+            </div>    
+            <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="question" id="q5" style="display:none">
+            <div class="vraag-container">
+            <h1>5. Waar bevindt zich het grootste deel van de kangoeroepopulatie in Australië?</h1>
+            </div>
+            <div class="vragen">
+            <div class="answer" onclick="checkAnswer('q5', 'De graslanden', this)">De graslanden</div>
+            <div class="answer" onclick="checkAnswer('q5', 'De graslanden', this)">De woestijnen</div>
+            <div class="answer" onclick="checkAnswer('q5', 'De graslanden', this)">De bossen</div>
+            </div>    
+            <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="question" id="q6" style="display:none">
+            <div class="vraag-container">
+            <h1>6. Wat is de grootste soort kangoeroe?</h1>
+            </div>
+            <div class="vragen">
+            <div class="answer" onclick="checkAnswer('q6', 'Rode kangoeroe', this)">Rode kangoeroe</div>
+            <div class="answer" onclick="checkAnswer('q6', 'Rode kangoeroe', this)">Grijze kangoeroe</div>
+            <div class="answer" onclick="checkAnswer('q6', 'Rode kangoeroe', this)">Boom kangoeroe</div>
+            </div>    
+            <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="question" id="q7" style="display:none">
+            <div class="vraag-container">
+            <h1>7. Wat is een uniek kenmerk van kangoeroes?</h1>
+            </div>
+            <div class="vragen">
+            <div class="answer" onclick="checkAnswer('q7', 'Ze kunnen niet achteruit lopen', this)">Ze kunnen vliegen</div>
+            <div class="answer" onclick="checkAnswer('q7', 'Ze kunnen niet achteruit lopen', this)">Ze kunnen zwemmen</div>
+            <div class="answer" onclick="checkAnswer('q7', 'Ze kunnen niet achteruit lopen', this)">Ze kunnen niet achteruit lopen</div>
+            </div>    
+            <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="question" id="q8" style="display:none">
+            <div class="vraag-container">
+            <h1>8. Welk dier is nauw verwant aan de kangoeroe?</h1>
+            </div>
+            <div class="vragen">
+            <div class="answer" onclick="checkAnswer('q8', 'Wallaby', this)">Koala</div>
+            <div class="answer" onclick="checkAnswer('q8', 'Wallaby', this)">Wallaby</div>
+            <div class="answer" onclick="checkAnswer('q8', 'Wallaby', this)">Echidna</div>
+            </div>    
+            <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="question" id="q9" style="display:none">
+            <div class="vraag-container">
+            <h1>9. Welke kleur zijn rode kangoeroes bij geboorte?</h1>
+            </div>
+            <div class="vragen">
+            <div class="answer" onclick="checkAnswer('q9', 'Wit', this)">Wit</div>
+            <div class="answer" onclick="checkAnswer('q9', 'Wit', this)">Grijs</div>
+            <div class="answer" onclick="checkAnswer('q9', 'Wit', this)">Rood</div>
+            </div>    
+            <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+        <div class="question" id="q10" style="display:none">
+            <div class="vraag-container">
+            <h1>10. Hoeveel uur per dag besteden kangoeroes gemiddeld aan slapen?</h1>
+            </div>
+            <div class="vragen">
+            <div class="answer" onclick="checkAnswer('q10', '12-16 uur', this)">4-8 uur</div>
+            <div class="answer" onclick="checkAnswer('q10', '12-16 uur', this)">8-12 uur</div>
+            <div class="answer" onclick="checkAnswer('q10', '12-16 uur', this)">12-16 uur</div>
+            </div>    
+            <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="open-question" id="q11" style="display:none">
+            <div class="vraag-container">
+            <h1>11. Beschrijf het dieet van een kangoeroe.</h1>
+            </div>
+            <textarea id="q11-answer" rows="4" cols="50"></textarea>
+            <input type="button" value="Controleer antwoord" onclick="checkGrassAnswer('q11')">
+                <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="open-question" id="q12" style="display:none">
+            <div class="vraag-container">
+            <h1>12. Hoe wordt het proces genoemd waarbij een kangoeroe zich voortbeweegt door te springen?</h1>
+            </div>
+            <textarea id="q12-answer" rows="4" cols="50"></textarea>
+            <input type="button" value="Controleer antwoord" onclick="checkHoppenAnswer('q12')">
+                <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="open-question" id="q13" style="display:none">
+            <div class="vraag-container">
+            <h1>13. Wat is een belangrijke reden waarom kangoeroes een bedreigde diersoort zijn?</h1>
+            </div>
+            <textarea id="q13-answer" rows="4" cols="50"></textarea>
+            <input type="button" value="Controleer antwoord" onclick="checkBedreigingAnswer('q13')">
+                <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+
+        <div class="open-question" id="q14" style="display:none">
+            <div class="vraag-container">
+            <h1>14. Hoe communiceren kangoeroes voornamelijk met elkaar?</h1>
+            </div>
+            <textarea id="q14-answer" rows="4" cols="50"></textarea>
+            <input type="button" value="Controleer antwoord" onclick="checkTaalAnswer('q14')">
+                <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+
+        <div class="open-question" id="q15" style="display:none">
+            <div class="vraag-container">
+            <h1>15. In welk beroemd videogame verschijnt een boksende kangoeroe?</h1>
+            </div>
+            <textarea id="q15-answer" rows="4" cols="50"></textarea>
+            <input type="button" value="Controleer antwoord" onclick="checkGameAnswer('q15')">
+                <div class="feedback-container">
+                    <h2 class="feedback"></h2>
+                </div>
+        </div>
+        <h2 id="score"></h2>
+    </form>
+    <div id="result"></div>
+</div>
+<div class="lees">
+    <h2>Lees de tekst hieronder:</h2>
+</div>
+<div class="kang-info">
+    <h2>
+ Kangoeroes zijn coole dieren uit Australië. <br> 
+  Ze kunnen superhoog en ver springen! 
+ Babykangoeroes heten 'joey's'
+ en groeien op in de buidel van hun mama. <br> <br>
+ Kangoeroes zijn sociale dieren die in groepen leven.
+ Ze gebruiken hun sterke staart om te lopen en soms zelfs te vechten. <br>
+ Sommige kangoeroes zijn 's nachts wakker. 
+ Ze wonen in veel verschillende plekken, zoals graslanden en bossen.
+ In Australië zijn kangoeroes een speciaal symbool. Ze zijn echt uniek en leuk!
+    </h2>
+</div>
+</body>
+<script src="JS/kang.js"></script>
+</html>

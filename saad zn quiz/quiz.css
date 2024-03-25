@@ -1,0 +1,52 @@
+#quiz-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+    align-items: center;
+}
+.vraag-container{
+    background-color: antiquewhite;
+    width: 100vh;
+    height: 10vh;
+    text-align: center;
+    border: solid chocolate;
+    border-radius: 8px;
+    padding-bottom: 3vh;
+}
+
+.vraag-container h1{
+padding: 1vh;
+}
+.question {
+    margin-bottom: 20px;
+}
+
+.answer {
+    font-size: 20pt;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #a78d52;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 20vw;
+    user-select: none;
+    text-align: center;
+}
+
+.open-question textarea {
+    width: 100%;
+    padding-top: 3vh;
+    background-color: rgb(250, 250, 250);
+    font-weight: bold;
+}
+
+#result {
+    font-weight: bold;
+}
+/* Voeg deze regel toe aan je CSS om te voorkomen dat de gebruiker meerdere antwoorden selecteert */
+.answer.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
