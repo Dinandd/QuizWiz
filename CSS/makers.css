@@ -9,7 +9,8 @@
   }
   
   body{
-    background-image: url(/pics/home/BackgroundSiteQuizWiz.png);
+    background-image: url(../pics/home/BackgroundSiteQuizWiz.png);
+    background-repeat: no-repeat;
     background-size: cover;
   }
   .logo{
@@ -40,7 +41,7 @@
       overflow: hidden;
       background-color: rgb(155 7 7);
       height: 10vh;
-      width: 213vh;
+      width: 214.63vh;
       margin-left: -1vh;
       margin-top: -1vh;
     }
