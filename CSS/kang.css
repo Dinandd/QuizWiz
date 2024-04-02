@@ -11,6 +11,9 @@
   body{
     background-image: url(../pics/kangaroo/kangaroo.png);
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
   }
   
   .logo{
@@ -171,6 +174,7 @@
   }
   
   .feedback{
+    font-family: font2;
       position: absolute;
       display: ruby;
       background-color: #ab760470;
@@ -219,3 +223,31 @@
     font-family: font1;
     padding: 1vh;
   }
+  @media (max-aspect-ratio: 1/1){
+    #quiz-container{
+      width: 90%;
+    }
+    .question{
+      margin-top: 0;
+    }
+    .vraag-container{
+      max-width: 95%;
+      height: 24vh;
+    }
+    .vraag-container h1{
+      margin-bottom: 1vh;
+    }
+
+    .vragen {
+      margin-top: 3vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .answer{
+    width: 140%;
+  }
+  }
+
+  @media(max-width: 24vh;)
