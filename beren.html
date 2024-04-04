@@ -30,7 +30,14 @@
     </nav>
     </div>
 
-    <div class="quizInfo" id="q1">
+    <div class="naamInvoer" id="naamInvoer">
+        <h1>Voer uw naam in</h1>
+        <input type="text" id="naamSpeler" placeholder="Naam">
+        <p>(U kunt niet verder zonder een naam in te voeren)</p>
+        <input type="submit" value="Speel" onclick="startQuiz()">
+    </div>
+
+    <div class="quizInfo" id="q1" style="display: none;">
         <h1 class="quizVraag">Hoeveel soorten beren zijn er in de wereld?</h1>
         <div class="antwoorden">
             <div class="antwoord1">
@@ -201,7 +208,7 @@
     </div>
 
     <div class="quizScore" id="quizScore" style="display: none;">
-
+        
     </div>
 
     

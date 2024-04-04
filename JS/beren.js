@@ -1,6 +1,7 @@
 let score = 0;
 let currentQuestion = 1;
-let correctAnswers = ["8", "Alleseters", "Kodiakbeer", "Boar", "IJsbeer", "Ursus arctos", "Zuid-Amerika", "Hibernatie", "Troep", "Panda", "bult", "vis", "maanden", "instincten", "grommen"]
+let correctAnswers = ["8", "Alleseters", "Kodiakbeer", "Boar", "IJsbeer", "Ursus arctos", "Zuid-Amerika", "Hibernatie", "Troep", "Panda", "bult", "vis", "maanden", "instincten", "grommen"];
+let naam;
 
 function checkAnswer(button) {
     let selectedAnswer = button.textContent;
@@ -17,7 +18,6 @@ function checkAnswer(button) {
     setTimeout(nextQuestion, 1500);
 }
 
-
 function nextQuestion() {
     // Reset antwoordkleuren
     let buttons = document.querySelectorAll(".antwoorden button");
@@ -25,8 +25,8 @@ function nextQuestion() {
         button.style.backgroundColor = "rgb(146, 85, 5)";
     });
 
-    document.getElementById("leesBeerInfo").style.display = "none"
-    document.getElementById("beerInfo").style.display = "none"
+    document.getElementById("leesBeerInfo").style.display = "none";
+    document.getElementById("beerInfo").style.display = "none";
 
     document.getElementById("q" + currentQuestion).style.display = "none";
 
@@ -36,11 +36,10 @@ function nextQuestion() {
         correctAnswer = correctAnswers[currentQuestion - 1]; // Update correct answer
         document.getElementById("q" + currentQuestion).style.display = "block"; // Display next question
     }  else {
-        document.getElementById("quizScore").innerText = "Score: " + score + "/15"
+        document.getElementById("quizScore").innerText = "Goed gedaan " + naam + " score: " + score + "/15";
         document.getElementById("quizScore").style.display = "block";
     }
 }
-
 
 function checkOpenAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
@@ -55,4 +54,10 @@ function checkOpenAnswer(questionId) {
     }
     
     setTimeout(nextQuestion, 100);
+}
+
+function startQuiz() {
+    naam = document.getElementById("naamSpeler").value;
+    document.getElementById("naamInvoer").style.display = "none";
+    document.getElementById("q1").style.display = "block";
 }
