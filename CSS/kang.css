@@ -120,14 +120,14 @@
       padding: 20px;
       border-radius: 4px;
       text-align: center;
-      margin-top: 20vh;
+      /* margin-top: 20vh; */
   }
   .vraag-container{
-      background-color: rgb(177, 154, 123);
+      background-color: rgba(177, 154, 123, 0.478);
       width: 100vh;
       height: 15vh;
       text-align: center;
-      border: solid chocolate;
+      border: solid rgba(210, 105, 30, 0.478);
       border-radius: 8px;
   }
   
@@ -201,7 +201,7 @@
     height: 40vh;
     background-color: #d6ab61de;
     position: absolute;
-    margin-top: 14vh;
+    margin-top: 34vh;
     font-size: 14pt;
     border-radius: 30px;
     margin-left: 57vh;;
@@ -218,6 +218,7 @@
     background-color: #a78d52;
     border-radius: 2vh;
     margin-left: 85vh;
+    margin-top: 30vh;
   }
   .lees h2{
     font-family: font1;
@@ -254,3 +255,13 @@
   }
   }
 
+
+  .disabled {
+      pointer-events: none;
+  }
+  #score, #score-gif, .question {
+      display: none;
+  }
+  #q1 {
+      display: block;
+  }

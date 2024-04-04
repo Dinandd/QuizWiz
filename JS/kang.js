@@ -18,7 +18,7 @@ function checkAnswer(questionId, correctAnswer, element) {
     }
 
     // Ga na 5 seconden naar de volgende vraag
-    setTimeout(nextQuestion, 3000);
+    setTimeout(nextQuestion, 100);
 }
 
 function nextQuestion() {
@@ -39,7 +39,7 @@ function checkGrassAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes eten voornamelijk gras.";
     }
-    setTimeout(nextQuestion, 4000);
+    setTimeout(nextQuestion, 100);
 }
 
 function checkHoppenAnswer(questionId) {
@@ -49,7 +49,7 @@ function checkHoppenAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
     }
-    setTimeout(nextQuestion, 4000);
+    setTimeout(nextQuestion, 100);
 }
 
 function checkBedreigingAnswer(questionId) {
@@ -59,7 +59,7 @@ function checkBedreigingAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes zijn bedreigd door jacht.";
     }
-    setTimeout(nextQuestion, 4000);
+    setTimeout(nextQuestion, 100);
 }
 
 function checkTaalAnswer(questionId) {
@@ -69,7 +69,7 @@ function checkTaalAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes communiceren met hun lichaamstaal.";
     }
-    setTimeout(nextQuestion, 4000);
+    setTimeout(nextQuestion, 100);
 }
 
 function checkGameAnswer(questionId) {
@@ -79,8 +79,9 @@ function checkGameAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. De kangoeroes verschijnt in de videogame Tekken.";
     }
-    setTimeout(nextQuestion, 4000);
+    setTimeout(nextQuestion, 1000);
 }
+
 
 function showScore() {
     // Verberg de laatste vraag
@@ -88,6 +89,17 @@ function showScore() {
 
     // Toon de score
     let scoreElement = document.getElementById("score");
-    scoreElement.innerHTML = "Je score is: " + score + " van " + currentQuestion;
+    scoreElement.innerHTML = "Je score is: " + score + " van " + (currentQuestion - 1);
     scoreElement.style.display = "block";
+
+    // Toon een GIF op basis van de score
+    let gifElement = document.getElementById("score-gif");
+    if (score <= 5) {
+        gifElement.src = "../pics/MHKq.gif";
+    } else if (score <= 10) {
+        gifElement.src = "../pics/iVx.gif";
+    } else {
+        gifElement.src = "../pics/u8P.gif";
+    }
+    gifElement.style.display = "block";
 }
