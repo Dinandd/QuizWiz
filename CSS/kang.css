@@ -248,6 +248,9 @@
   .answer{
     width: 140%;
   }
+
+  .dropdown .navbar a{
+    margin-right: 50vh;
+  }
   }
 
-  @media(max-width: 24vh;)
