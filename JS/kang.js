@@ -1,3 +1,14 @@
+function startQuiz() {
+    // Sla de naam op
+    var name = document.getElementById("name").value;
+    localStorage.setItem("name", name);
+
+    // Verberg het startscherm en toon de quiz
+    document.getElementById("start-screen").style.display = "none";
+    document.getElementById("quiz-form").style.display = "block";
+}
+
+
 // Houd bij welke vraag momenteel wordt weergegeven
 let currentQuestion = 1;
 let score = 0;
@@ -28,12 +39,16 @@ function nextQuestion() {
     // Verhoog het vraagnummer
     currentQuestion++;
 
-    // Toon de volgende vraag
-    document.getElementById("q" + currentQuestion).style.display = "block";
+    // If there are no more questions, end the quiz
+    if (document.getElementById("q" + currentQuestion) === null) {
+        endQuiz();
+    } else {
+        // Toon de volgende vraag
+        document.getElementById("q" + currentQuestion).style.display = "block";
+    }
 }
-
 function checkGrassAnswer(questionId) {
-    let answer = document.getElementById(questionId + "-answer").value;
+    let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
     if (answer.includes("gras")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed gedaan! Kangoeroes eten inderdaad gras.";
     } else {
@@ -43,7 +58,7 @@ function checkGrassAnswer(questionId) {
 }
 
 function checkHoppenAnswer(questionId) {
-    let answer = document.getElementById(questionId + "-answer").value;
+    let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
     if (answer.includes("Hoppen")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes bewegen door te hoppen";
     } else {
@@ -53,7 +68,7 @@ function checkHoppenAnswer(questionId) {
 }
 
 function checkBedreigingAnswer(questionId) {
-    let answer = document.getElementById(questionId + "-answer").value;
+    let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
     if (answer.includes("jacht")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes zijn bedreigd door jacht.";
     } else {
@@ -63,7 +78,7 @@ function checkBedreigingAnswer(questionId) {
 }
 
 function checkTaalAnswer(questionId) {
-    let answer = document.getElementById(questionId + "-answer").value;
+    let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
     if (answer.includes("lichaamstaal")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes communiceren met hun lichaamstaal.";
     } else {
@@ -73,7 +88,7 @@ function checkTaalAnswer(questionId) {
 }
 
 function checkGameAnswer(questionId) {
-    let answer = document.getElementById(questionId + "-answer").value;
+    let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
     if (answer.includes("Tekken")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! De kangoeroes verschijnt in de videogame Tekken.";
     } else {
@@ -82,24 +97,18 @@ function checkGameAnswer(questionId) {
     setTimeout(nextQuestion, 1000);
 }
 
+function endQuiz() {
+    var name = localStorage.getItem("name");
+    var finalScore = score; // Calculate the score
+    document.getElementById("result").innerHTML = name + ", je hebt " + finalScore + " vragen goed beantwoord.";
 
-function showScore() {
-    // Verberg de laatste vraag
-    document.getElementById("q" + currentQuestion).style.display = "none";
-
-    // Toon de score
-    let scoreElement = document.getElementById("score");
-    scoreElement.innerHTML = "Je score is: " + score + " van " + (currentQuestion - 1);
-    scoreElement.style.display = "block";
-
-    // Toon een GIF op basis van de score
-    let gifElement = document.getElementById("score-gif");
-    if (score <= 5) {
-        gifElement.src = "../pics/MHKq.gif";
-    } else if (score <= 10) {
-        gifElement.src = "../pics/iVx.gif";
-    } else {
-        gifElement.src = "../pics/u8P.gif";
+    // Display gif based on score
+    document.getElementById("result-container").style.display = "block";
+    if (finalScore >= 0 && finalScore <= 5) {
+        document.getElementById("gif").src = "../pics/oke.gif";
+    } else if (finalScore >= 6 && finalScore <= 10) {
+        document.getElementById("gif").src = "../pics/goed.gif";
+    } else if (finalScore >= 11 && finalScore <= 15) {
+        document.getElementById("gif").src = "../pics/perfect.gif";
     }
-    gifElement.style.display = "block";
 }
