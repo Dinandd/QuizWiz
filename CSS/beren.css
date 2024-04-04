@@ -300,4 +300,12 @@
     text-align: center;
     margin-left: 30vw;
   }
+
+  .leesBeerInfo {
+    margin-top: 5vh;
+  }
+
+  .beerInfo {
+    margin-top: 8vh;
+  }
 }
