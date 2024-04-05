@@ -51,6 +51,7 @@ function checkGrassAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
     if (answer.includes("gras")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed gedaan! Kangoeroes eten inderdaad gras.";
+        score++;
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes eten voornamelijk gras.";
     }
@@ -59,8 +60,9 @@ function checkGrassAnswer(questionId) {
 
 function checkHoppenAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
-    if (answer.includes("Hoppen")) {
+    if (answer.includes("hoppen")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes bewegen door te hoppen";
+        score++;
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
     }
@@ -71,6 +73,7 @@ function checkBedreigingAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
     if (answer.includes("jacht")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes zijn bedreigd door jacht.";
+        score++;
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes zijn bedreigd door jacht.";
     }
@@ -81,6 +84,7 @@ function checkTaalAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
     if (answer.includes("lichaamstaal")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! Kangoeroes communiceren met hun lichaamstaal.";
+        score++;
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes communiceren met hun lichaamstaal.";
     }
@@ -89,8 +93,9 @@ function checkTaalAnswer(questionId) {
 
 function checkGameAnswer(questionId) {
     let answer = document.getElementById(questionId + "-answer").value.toLowerCase();
-    if (answer.includes("Tekken")) {
+    if (answer.includes("tekken")) {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Goed zo! De kangoeroes verschijnt in de videogame Tekken.";
+        score++;
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. De kangoeroes verschijnt in de videogame Tekken.";
     }

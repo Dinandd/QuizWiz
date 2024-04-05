@@ -11,7 +11,7 @@
   body{
     background-image: url(../pics/kangaroo/kangaroo.png);
     background-size: cover;
-    width: 100vw;
+    width: 98.5vw;
     height: 100vh;
     background-position: center;
     padding-top: 10vh;
@@ -155,7 +155,7 @@
       display: inline-block;
       margin: 10px;
       padding: 10px;
-      background-color: #a78d52;
+      background-color: #a78e52c5;
       border-radius: 6px;
       cursor: pointer;
       width: 17vw;
@@ -193,8 +193,8 @@
     padding-top: 3vh;
   }
   #gif{
-    border-radius: 10px;
-    padding-top: 3vh;
+    border-radius: 14px;
+    margin-top: 3vh;
   }
   /* Voeg deze regel toe aan je CSS om te voorkomen dat de gebruiker meerdere antwoorden selecteert */
   .answer.disabled {
@@ -253,6 +253,9 @@
     padding: 1vh;
   }
   @media (max-aspect-ratio: 1/1){
+    body{
+      height: auto;
+    }
     #quiz-container{
       width: 90%;
     }
@@ -280,6 +283,45 @@
 
   .dropdown .navbar a{
     margin-right: 50vh;
+  }
+  #start-screen{
+    font-family: font2;
+  }
+  .lees{
+    margin-left: 5vh;
+    width: 44vh;
+    height: 6vh;
+    padding: 0;
+  }
+  .kang-info{
+    margin-left: -1vh;
+    width: 42vh;
+    height: auto;
+  }
+  .kang-info h2{
+    font-family: font2;
+    padding: 1vh;
+    width: 40vh;
+  }
+  .navbar{
+    height: 17vh;
+  }
+.quizwiz{
+  margin-left: 14vh;
+  font-size: 50pt;
+}
+  .pages{
+    display: flex;
+    margin-top: 10vh;
+    margin-left: -0vh;
+    gap: 0;
+  }
+  .buttons{
+    font-size: 38pt;
+  }
+  .dropdown{
+    font-size: 38pt;
+    margin-top: -2.3vh;
   }
   }
 
