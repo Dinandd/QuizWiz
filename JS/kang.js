@@ -1,7 +1,13 @@
 function startQuiz() {
     // Sla de naam op
-    var name = document.getElementById("name").value;
+    let name = document.getElementById("name").value;
     localStorage.setItem("name", name);
+
+        // Check if the name field is empty
+        if (name.trim() == "") {
+            alert("Vul een naam in om te beginnen.");
+            return;
+        }
 
     // Verberg het startscherm en toon de quiz
     document.getElementById("start-screen").style.display = "none";
@@ -29,7 +35,7 @@ function checkAnswer(questionId, correctAnswer, element) {
     }
 
     // Ga na 5 seconden naar de volgende vraag
-    setTimeout(nextQuestion, 100);
+    setTimeout(nextQuestion, 2300);
 }
 
 function nextQuestion() {
@@ -103,17 +109,17 @@ function checkGameAnswer(questionId) {
 }
 
 function endQuiz() {
-    var name = localStorage.getItem("name");
-    var finalScore = score; // Calculate the score
+    let name = localStorage.getItem("name");
+    let finalScore = score; // Calculate the score
     document.getElementById("result").innerHTML = name + ", je hebt " + finalScore + " vragen goed beantwoord.";
 
     // Display gif based on score
     document.getElementById("result-container").style.display = "block";
     if (finalScore >= 0 && finalScore <= 5) {
-        document.getElementById("gif").src = "../pics/oke.gif";
+        document.getElementById("gif").src = "pics/oke.gif";
     } else if (finalScore >= 6 && finalScore <= 10) {
-        document.getElementById("gif").src = "../pics/goed.gif";
+        document.getElementById("gif").src = "pics/goed.gif";
     } else if (finalScore >= 11 && finalScore <= 15) {
-        document.getElementById("gif").src = "../pics/perfect.gif";
+        document.getElementById("gif").src = "pics/perfect.gif";
     }
 }

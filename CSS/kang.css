@@ -229,7 +229,6 @@
     width: 60rem;
     height: 40vh;
     background-color: #d6ab6198;
-    position: absolute;
     margin-top: 2vh;
     font-size: 14pt;
     border-radius: 30px;
@@ -255,16 +254,19 @@
   @media (max-aspect-ratio: 1/1){
     body{
       height: auto;
+      background-size: cover;
+      margin: 0;
     }
     #quiz-container{
       width: 90%;
+      margin-top: 10vh;
     }
     .question{
       margin-top: 0;
     }
     .vraag-container{
       max-width: 95%;
-      height: 24vh;
+      height: auto;
     }
     .vraag-container h1{
       margin-bottom: 1vh;
@@ -278,23 +280,43 @@
       flex-direction: column;
   }
   .answer{
-    width: 140%;
+    width: 30vh;
   }
-
+.feedback-container{
+  font-size: 18pt;
+  margin-left: -29vh;
+  margin-top: -62vh;
+  position: absolute;
+  width: 70vh;
+  height: auto;
+  max-width: 70vh;
+}
+.feedback{
+  background-color: #d6ab61;
+  width: auto;
+  height: auto;
+  
+}
   .dropdown .navbar a{
     margin-right: 50vh;
   }
   #start-screen{
     font-family: font2;
   }
+  #start-screen h1{
+    margin-left: 2.3vh;
+  }
   .lees{
-    margin-left: 5vh;
+    margin-left: 0.3vh;
     width: 44vh;
     height: 6vh;
     padding: 0;
   }
+  .lees h2{
+    font-size: 16pt;
+  }
   .kang-info{
-    margin-left: -1vh;
+    margin-left: 4vh;
     width: 42vh;
     height: auto;
   }
@@ -323,6 +345,8 @@
     font-size: 38pt;
     margin-top: -2.3vh;
   }
+  #start-screen h1{
+background-color: #d6ab61a1;
+border-radius: 7px;
   }
-
-
+}
