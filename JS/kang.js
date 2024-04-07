@@ -35,7 +35,7 @@ function checkAnswer(questionId, correctAnswer, element) {
     }
 
     // Ga na 5 seconden naar de volgende vraag
-    setTimeout(nextQuestion, 2300);
+    setTimeout(nextQuestion, 1700);
 }
 
 function nextQuestion() {
@@ -61,7 +61,7 @@ function checkGrassAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes eten voornamelijk gras.";
     }
-    setTimeout(nextQuestion, 100);
+    setTimeout(nextQuestion, 2000);
 }
 
 function checkHoppenAnswer(questionId) {
@@ -72,7 +72,7 @@ function checkHoppenAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes bewegen door te hoppen";
     }
-    setTimeout(nextQuestion, 100);
+    setTimeout(nextQuestion, 2000);
 }
 
 function checkBedreigingAnswer(questionId) {
@@ -83,7 +83,7 @@ function checkBedreigingAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes zijn bedreigd door jacht.";
     }
-    setTimeout(nextQuestion, 100);
+    setTimeout(nextQuestion, 2000);
 }
 
 function checkTaalAnswer(questionId) {
@@ -94,7 +94,7 @@ function checkTaalAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. Kangoeroes communiceren met hun lichaamstaal.";
     }
-    setTimeout(nextQuestion, 100);
+    setTimeout(nextQuestion, 2000);
 }
 
 function checkGameAnswer(questionId) {
@@ -105,7 +105,7 @@ function checkGameAnswer(questionId) {
     } else {
         document.getElementById(questionId).querySelector(".feedback").innerHTML = "Dat is niet helemaal correct. De kangoeroes verschijnt in de videogame Tekken.";
     }
-    setTimeout(nextQuestion, 1000);
+    setTimeout(nextQuestion, 2000);
 }
 
 function endQuiz() {
