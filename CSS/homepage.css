@@ -32,3 +32,63 @@ body {
 .welkomtekst p {
     font-family: font1;
 }
+
+@media (max-aspect-ratio: 1/1){
+    body{
+      height: auto;
+      background-size: cover;
+      background-image: url(../pics/makers/tumblr_mqgdsfHgaC1rw6hhbo1_500.jpeg);
+      background-repeat: repeat;
+      margin: 0;
+    }
+    .dropdown{
+      font-size: 38pt;
+      margin-top: -2.3vh;
+    }
+  
+    .buttons{
+      font-size: 38pt;
+    }
+
+    .navbar{
+      height: 17vh;
+      width: 0;
+      background-color:#530000;
+    }
+  .quizwiz{
+    margin-left: 14vh;
+    font-size: 50pt;
+  }
+
+  .dropdown .navbar a{
+    margin-right: 50vh;
+  }
+  .navbar a:hover{
+    background-color:#630000;
+
+  }
+
+  .pages{
+    display: flex;
+    margin-top: 10vh;
+    margin-left: -0vh;
+    gap: 0;
+  }
+  .logo{
+    position: absolute;
+  }
+  .foto{
+    width: 10vh;
+    margin-left: -28vh;
+  }
+  .welkomtekst{
+    width: 87vw;
+    text-align: center;
+    background-color: rgb(87 0 6 / 70%);
+    border-radius: 30px;
+    margin-left: 6vw;
+    margin-top: 17vh;
+    font-size: 15pt;
+    color: white;
+  }
+}

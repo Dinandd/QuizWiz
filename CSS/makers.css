@@ -154,7 +154,6 @@
           background-image: url(../pics/makers/tumblr_mqgdsfHgaC1rw6hhbo1_500.jpeg);
           height: auto;
           background-size: cover;
-          background-position: top;
           background-repeat: repeat;
           margin: 0;
         }
@@ -170,6 +169,7 @@
         .navbar{
           height: 17vh;
           width: 0;
+          background-color:#530000;
         }
       .quizwiz{
         margin-left: 14vh;
@@ -200,7 +200,7 @@
       
       .show-info .info {
         display: block;
-        background-color: #fa3c3c;
+        background-color: #b41919ba;
         border-radius: 20px;
         margin-top: -12vh;
         position: absolute;
