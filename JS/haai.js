@@ -12,14 +12,14 @@ function checkAnswer(button) {
     } else {
       button.style.backgroundColor = "red"; // Incorrect answer, turn button red
     }
-    setTimeout(nextQuestion, 100);
+    setTimeout(nextQuestion, 2000);
   }
 
 function nextQuestion() {
   // Reset antwoordkleuren
   let buttons = document.querySelectorAll(".antwoorden button");
   buttons.forEach(button => {
-    button.style.backgroundColor = "rgb(146, 85, 5)";
+    button.style.backgroundColor = "";
   });
 
   document.getElementById("leesHaaiInfo").style.display = "none";
