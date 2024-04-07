@@ -148,3 +148,73 @@
       .info{
         margin-left: -20vh;
       }
+
+      @media (max-aspect-ratio: 1/1){
+        body{
+          background-image: url(../pics/makers/tumblr_mqgdsfHgaC1rw6hhbo1_500.jpeg);
+          height: auto;
+          background-size: cover;
+          background-position: top;
+          background-repeat: repeat;
+          margin: 0;
+        }
+        .dropdown{
+          font-size: 38pt;
+          margin-top: -2.3vh;
+        }
+      
+        .buttons{
+          font-size: 38pt;
+        }
+
+        .navbar{
+          height: 17vh;
+          width: 0;
+        }
+      .quizwiz{
+        margin-left: 14vh;
+        font-size: 50pt;
+      }
+
+      .dropdown .navbar a{
+        margin-right: 50vh;
+      }
+      .navbar a:hover{
+        background-color:#630000;
+
+      }
+   
+      .pages{
+        display: flex;
+        margin-top: 10vh;
+        margin-left: -0vh;
+        gap: 0;
+      }
+      .logo{
+        position: absolute;
+      }
+      .foto{
+        width: 10vh;
+        margin-left: -28vh;
+      }
+      
+      .show-info .info {
+        display: block;
+        background-color: #fa3c3c;
+        border-radius: 20px;
+        margin-top: -12vh;
+        position: absolute;
+        width: 62vw;
+        text-align: center;
+        margin-left: -16vh;
+    }
+
+    #info2{
+      margin-top: -36.3vh;
+    }
+
+    #info3{
+  
+      margin-top: -60.3vh;
+      }
+    }

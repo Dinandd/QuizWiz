@@ -11,9 +11,10 @@
   body{
     background-image: url(../pics/kangaroo/kangaroo.png);
     background-size: cover;
-    width: 100vw;
+    width: 98.5vw;
     height: 100vh;
     background-position: center;
+    padding-top: 10vh;
   }
   
   .logo{
@@ -112,7 +113,9 @@
     .dropdown:hover .dropdown-content {
       display: block;
     }
-  
+  #start-screen{
+    margin-top: 4vh;
+  }
     #quiz-container {
       height: auto;
       width: 50%;
@@ -120,14 +123,14 @@
       padding: 20px;
       border-radius: 4px;
       text-align: center;
-      margin-top: 20vh;
+
   }
   .vraag-container{
-      background-color: rgb(177, 154, 123);
+      background-color: rgba(177, 154, 123, 0.478);
       width: 100vh;
       height: 15vh;
       text-align: center;
-      border: solid chocolate;
+      border: solid rgba(210, 105, 30, 0.478);
       border-radius: 8px;
   }
   
@@ -135,6 +138,11 @@
   padding: 1vh;
   font-family: font2;
   font-size: 30pt;
+  }
+  .answer-input{
+    max-width: 85vh;
+    margin-top: 3vh;
+    margin-left: 1.4vh;
   }
   .question {
       margin-top: 15vh;
@@ -147,7 +155,7 @@
       display: inline-block;
       margin: 10px;
       padding: 10px;
-      background-color: #a78d52;
+      background-color: #a78e52c5;
       border-radius: 6px;
       cursor: pointer;
       width: 17vw;
@@ -161,11 +169,32 @@
       background-color: rgb(250, 250, 250);
       font-weight: bold;
   }
-  
-  #result {
-      margin-top: 100px;
+  #start-screen h1{
+    font-family: font1;
+    font-size: 24pt;
+  }
+  #start-screen input, button{
+    font-family: font1;
+    font-size: 16pt;
+    margin-left: 20px;
+  }
+  #result-container {
+      text-align: center;
+      border-radius: 10px;
+      background-color: #a78e528c;
+      height: 10vh;
+      width: auto;
+      margin-top: 10vh;
       font-weight: bold;
-      
+      font-family: font1;
+  }
+  #result{
+    font-size: 21pt;
+    padding-top: 3vh;
+  }
+  #gif{
+    border-radius: 14px;
+    margin-top: 3vh;
   }
   /* Voeg deze regel toe aan je CSS om te voorkomen dat de gebruiker meerdere antwoorden selecteert */
   .answer.disabled {
@@ -199,12 +228,11 @@
   .kang-info{
     width: 60rem;
     height: 40vh;
-    background-color: #d6ab61de;
-    position: absolute;
-    margin-top: 14vh;
+    background-color: #d6ab6198;
+    margin-top: 2vh;
     font-size: 14pt;
     border-radius: 30px;
-    margin-left: 57vh;;
+
   }
   .kang-info h2{
     width: 58rem;
@@ -215,24 +243,30 @@
   .lees{
     width: 37.5vh;
     height: 5vh;
-    background-color: #a78d52;
+    background-color: #d6ab6198;
     border-radius: 2vh;
-    margin-left: 85vh;
+     margin-left: 30vh;
   }
   .lees h2{
     font-family: font1;
     padding: 1vh;
   }
   @media (max-aspect-ratio: 1/1){
+    body{
+      height: auto;
+      background-size: cover;
+      margin: 0;
+    }
     #quiz-container{
       width: 90%;
+      margin-top: 10vh;
     }
     .question{
       margin-top: 0;
     }
     .vraag-container{
       max-width: 95%;
-      height: 24vh;
+      height: auto;
     }
     .vraag-container h1{
       margin-bottom: 1vh;
@@ -246,11 +280,73 @@
       flex-direction: column;
   }
   .answer{
-    width: 140%;
+    width: 30vh;
   }
-
+.feedback-container{
+  font-size: 18pt;
+  margin-left: -29vh;
+  margin-top: -62vh;
+  position: absolute;
+  width: 70vh;
+  height: auto;
+  max-width: 70vh;
+}
+.feedback{
+  background-color: #d6ab61;
+  width: auto;
+  height: auto;
+  
+}
   .dropdown .navbar a{
     margin-right: 50vh;
   }
+  #start-screen{
+    font-family: font2;
   }
-
+  #start-screen h1{
+    margin-left: 2.3vh;
+  }
+  .lees{
+    margin-left: 0.3vh;
+    width: 44vh;
+    height: 6vh;
+    padding: 0;
+  }
+  .lees h2{
+    font-size: 16pt;
+  }
+  .kang-info{
+    margin-left: 4vh;
+    width: 42vh;
+    height: auto;
+  }
+  .kang-info h2{
+    font-family: font2;
+    padding: 1vh;
+    width: 40vh;
+  }
+  .navbar{
+    height: 17vh;
+  }
+.quizwiz{
+  margin-left: 14vh;
+  font-size: 50pt;
+}
+  .pages{
+    display: flex;
+    margin-top: 10vh;
+    margin-left: -0vh;
+    gap: 0;
+  }
+  .buttons{
+    font-size: 38pt;
+  }
+  .dropdown{
+    font-size: 38pt;
+    margin-top: -2.3vh;
+  }
+  #start-screen h1{
+background-color: #d6ab61a1;
+border-radius: 7px;
+  }
+}
